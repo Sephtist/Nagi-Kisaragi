@@ -1,69 +1,123 @@
+* {
+  box-sizing: border-box;
+  }
+
 body {
-background-color: #111;
-color: #e8e8e8;
-font-family: Arial, sans-serif;
+background: #0b0d0f;
+color: #d6d9dc;
+font-family: Arial, Helvetica, sans-serif;
 margin: 0;
-padding: 0;
+line-height: 1.6;
 }
 
 header {
-padding: 80px 20px 40px;
-text-align: center;
-border-bottom: 1px solid #444;
+padding: 70px 20px 45px;
+border-bottom: 1px solid #292d31;
+background: #0e1012;
 }
 
 .system {
-color: #888;
-font-size: 12px;
+color: #626970;
+font-family: monospace;
+font-size: 11px;
 letter-spacing: 3px;
+text-transform: uppercase;
 }
 
 h1 {
-font-size: 42px;
+color: #f0f1f2;
+font-size: 46px;
+font-weight: 400;
 letter-spacing: 12px;
-margin: 20px 0 10px;
+margin: 25px 0 12px;
 }
 
 .subtitle {
-color: #aaa;
+color: #777e85;
+font-family: monospace;
+font-size: 12px;
 letter-spacing: 4px;
-font-size: 14px;
 }
 
 main {
-max-width: 700px;
+max-width: 760px;
 margin: auto;
-padding: 50px 20px;
+padding: 55px 25px;
 }
 
 .status {
-border: 1px solid #444;
-padding: 20px;
-margin-bottom: 40px;
+border: 1px solid #292d31;
+background: #0e1012;
+padding: 20px 25px;
+margin-bottom: 45px;
 font-family: monospace;
+font-size: 13px;
 }
 
 .status span {
-color: #7cff7c;
+color: #8cae91;
+}
+
+h2 {
+color: #9da3a8;
+font-family: monospace;
+font-size: 13px;
+font-weight: normal;
+letter-spacing: 3px;
+margin-bottom: 25px;
+}
+
+section {
+margin-bottom: 35px;
 }
 
 nav {
-display: flex;
-justify-content: space-between;
-gap: 15px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 12px;
+margin-top: 50px;
 }
 
 nav a {
-color: #e8e8e8;
-text-decoration: none;
-border: 1px solid #444;
-padding: 15px 20px;
-flex: 1;
+color: #aeb3b8;
+border: 1px solid #292d31;
+background: #0e1012;
+padding: 18px 10px;
 text-align: center;
+text-decoration: none;
+font-family: monospace;
+font-size: 12px;
+letter-spacing: 2px;
 transition: 0.2s;
 }
 
 nav a:hover {
-background-color: #e8e8e8;
-color: #111;
+background: #d6d9dc;
+color: #0b0d0f;
+border-color: #d6d9dc;
 }
+
+a {
+color: #9da3a8;
+text-decoration: none;
+}
+
+a:hover {
+color: #f0f1f2;
+}
+
+@media (max-width: 600px) {
+
+```
+h1 {
+    font-size: 30px;
+    letter-spacing: 7px;
+}
+
+nav {
+    grid-template-columns: 1fr;
+}
+```
+
+}
+
