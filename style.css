@@ -209,6 +209,7 @@ nav {
     .case-status {
         text-align: left;
     }
+  
 }
 .nagi-note {
     margin-top: 30px;
@@ -219,4 +220,51 @@ nav {
     font-family: monospace;
     font-size: 12px;
     line-height: 1.7;
+}
+
+.timeline {
+    border-left: 1px solid #292d31;
+    margin-left: 10px;
+}
+
+.timeline-entry {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 25px;
+    padding: 0 0 35px 25px;
+    position: relative;
+}
+
+.timeline-entry::before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: 5px;
+    width: 7px;
+    height: 7px;
+    background: #626970;
+}
+
+.timeline-date {
+    color: #626970;
+    font-family: monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.timeline-entry strong {
+    color: #d6d9dc;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.timeline-entry p {
+    margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+    .timeline-entry {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
 }
