@@ -210,3 +210,13 @@ nav {
         text-align: left;
     }
 }
+.nagi-note {
+    margin-top: 30px;
+    padding: 15px 18px;
+    border-left: 2px solid #555b61;
+    background: #0e1012;
+    color: #8d949a;
+    font-family: monospace;
+    font-size: 12px;
+    line-height: 1.7;
+}
