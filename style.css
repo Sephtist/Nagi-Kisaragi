@@ -282,3 +282,37 @@ nav {
 .case-link:hover {
     color: #f0f1f2;
 }
+
+.profile-section {
+    margin-bottom: 50px;
+}
+
+.profile-section h2 {
+    margin-bottom: 25px;
+}
+
+.profile-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.profile-list li {
+    padding: 15px 18px;
+    border: 1px solid #292d31;
+    background: #0e1012;
+    color: #aeb3b8;
+}
+
+.profile-list li::before {
+    content: "— ";
+    color: #555b61;
+}
+
+@media (max-width: 600px) {
+    .profile-list {
+        grid-template-columns: 1fr;
+    }
+}
