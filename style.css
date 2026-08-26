@@ -268,3 +268,17 @@ nav {
         gap: 5px;
     }
 }
+
+.case-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #8d949a;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.case-link:hover {
+    color: #f0f1f2;
+}
