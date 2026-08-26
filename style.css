@@ -716,3 +716,35 @@ nav {
         text-align: left;
     }
 }
+
+.evidence-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 260px;
+    padding: 30px;
+    border: 1px solid #292d31;
+    background: #0a0c0e;
+    text-align: center;
+}
+
+.evidence-placeholder-label,
+.evidence-placeholder-status {
+    font-family: monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #686f76;
+}
+
+.evidence-placeholder strong {
+    margin: 25px 0 8px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.evidence-placeholder p {
+    margin: 4px 0;
+    color: #777d83;
+    font-size: 13px;
+}
