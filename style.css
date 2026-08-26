@@ -576,3 +576,42 @@ nav {
         text-align: left;
     }
 }
+
+.contact-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-top: 1px solid #292d31;
+    border-left: 1px solid #292d31;
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 20px;
+    border-right: 1px solid #292d31;
+    border-bottom: 1px solid #292d31;
+    background: #0e1012;
+}
+
+.contact-item a {
+    color: inherit;
+}
+
+@media (max-width: 600px) {
+    .contact-item {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
+
+.redacted {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #d6d9dc;
+    color: #d6d9dc;
+    font-family: monospace;
+    letter-spacing: 2px;
+    user-select: none;
+}
