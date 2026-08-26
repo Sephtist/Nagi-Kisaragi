@@ -316,3 +316,40 @@ nav {
         grid-template-columns: 1fr;
     }
 }
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid #292d31;
+    border-left: 1px solid #292d31;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 18px;
+    border-right: 1px solid #292d31;
+    border-bottom: 1px solid #292d31;
+    background: #0e1012;
+}
+
+.skill span {
+    color: #aeb3b8;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.skill strong {
+    color: #d6d9dc;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
