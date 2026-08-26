@@ -615,3 +615,48 @@ nav {
     letter-spacing: 2px;
     user-select: none;
 }
+
+.analysis-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.analysis-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #292d31;
+    background: #0e1012;
+}
+
+.analysis-item strong {
+    color: #d6d9dc;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .analysis-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.case-note {
+    max-width: 700px;
+    margin: 18px auto;
+    padding-left: 20px;
+    border-left: 1px solid #292d31;
+    color: #b8bdc2;
+    line-height: 1.8;
+}
+
+.anomalous-entry {
+    border-left: 2px solid #555b61;
+    padding-left: 15px;
+}
+
+.anomalous-entry strong {
+    letter-spacing: 1px;
+}
