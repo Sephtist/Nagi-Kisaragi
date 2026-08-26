@@ -388,3 +388,26 @@ nav {
         grid-column: auto;
     }
 }
+
+.assessment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.assessment-item {
+    padding: 20px;
+    border: 1px solid #292d31;
+    background: #0e1012;
+}
+
+.assessment-item p {
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+    .assessment {
+        grid-template-columns: 1fr;
+    }
+}
