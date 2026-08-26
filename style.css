@@ -520,3 +520,59 @@ nav {
         grid-template-columns: 1fr;
     }
 }
+
+.archive-index {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #292d31;
+}
+
+.archive-entry {
+    display: grid;
+    grid-template-columns: 120px 1fr 100px;
+    gap: 25px;
+    align-items: center;
+    padding: 22px 18px;
+    border: 1px solid #292d31;
+    border-top: none;
+    background: #0e1012;
+}
+
+.archive-number {
+    color: #686f76;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.archive-entry strong {
+    color: #d6d9dc;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.archive-entry p {
+    margin: 8px 0 0;
+    color: #8d949a;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.archive-status {
+    text-align: right;
+    color: #777d83;
+    font-family: monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+    .archive-entry {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .archive-status {
+        text-align: left;
+    }
+}
