@@ -411,3 +411,85 @@ nav {
         grid-template-columns: 1fr;
     }
 }
+
+.nagi-quote {
+    margin: 25px 0;
+    padding: 20px 25px;
+    border-left: 2px solid #777d83;
+    background: #0e1012;
+    color: #d6d9dc;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.case-index {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #292d31;
+}
+
+.case-entry {
+    display: grid;
+    grid-template-columns: 120px 1fr 100px;
+    gap: 25px;
+    align-items: center;
+    padding: 22px 18px;
+    border: 1px solid #292d31;
+    border-top: none;
+    background: #0e1012;
+    color: inherit;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.case-entry:hover {
+    background: #15181b;
+}
+
+.case-number {
+    color: #686f76;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.case-entry strong {
+    color: #d6d9dc;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.case-entry p {
+    margin: 8px 0 0;
+    color: #8d949a;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.case-status {
+    text-align: right;
+    color: #777d83;
+    font-family: monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.case-entry.restricted {
+    opacity: 0.7;
+}
+
+.case-entry.restricted:hover {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .case-entry {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .case-status {
+        text-align: left;
+    }
+}
