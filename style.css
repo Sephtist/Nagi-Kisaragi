@@ -748,3 +748,24 @@ nav {
     color: #777d83;
     font-size: 13px;
 }
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.site-nav a {
+    font-family: monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #777d83;
+    text-decoration: none;
+}
+
+.site-nav a:hover {
+    color: #d6d9dc;
+}
