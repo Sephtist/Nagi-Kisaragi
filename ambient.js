@@ -22,6 +22,13 @@ if (ambientFile) {
     ambientAudio.volume = 0;
     ambientAudio.preload = "auto";
 
+    ambientAudio.addEventListener("loadedmetadata", () => {
+    if (ambientAudio.duration > 30) {
+        ambientAudio.currentTime =
+            Math.random() * (ambientAudio.duration - 30);
+    }
+});
+
     function fadeIn() {
 
         ambientAudio.play().then(() => {
