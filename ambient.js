@@ -16,15 +16,23 @@ const ambientFile = ambientTracks[currentPage];
 
 if (ambientFile) {
 
-    const ambientAudio = new Audio();
+    const ambientAudio = new Audio("./" + ambientFile);
 
-    ambientAudio.src = "./" + ambientFile;
     ambientAudio.loop = true;
     ambientAudio.volume = 0.15;
     ambientAudio.preload = "auto";
 
-    document.addEventListener("click", function () {
-        ambientAudio.play();
-    }, { once: true });
+    const hasStarted = localStorage.getItem("nagiAmbientStarted");
 
+    if (hasStarted === "true") {
+        ambientAudio.play().catch(() => {});
+    }
+
+    document.addEventListener("click", function () {
+
+        ambientAudio.play().then(() => {
+            localStorage.setItem("nagiAmbientStarted", "true");
+        }).catch(() => {});
+
+    }, { once: true });
 }
