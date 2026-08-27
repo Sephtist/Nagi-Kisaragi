@@ -19,20 +19,39 @@ if (ambientFile) {
     const ambientAudio = new Audio("./" + ambientFile);
 
     ambientAudio.loop = true;
-    ambientAudio.volume = 0.15;
+    ambientAudio.volume = 0;
     ambientAudio.preload = "auto";
 
-    const hasStarted = localStorage.getItem("nagiAmbientStarted");
-
-    if (hasStarted === "true") {
-        ambientAudio.play().catch(() => {});
-    }
-
-    document.addEventListener("click", function () {
+    function fadeIn() {
 
         ambientAudio.play().then(() => {
-            localStorage.setItem("nagiAmbientStarted", "true");
-        }).catch(() => {});
 
-    }, { once: true });
+            let volume = 0;
+
+            const fade = setInterval(() => {
+
+                volume += 0.01;
+
+                if (volume >= 0.15) {
+                    volume = 0.15;
+                    clearInterval(fade);
+                }
+
+                ambientAudio.volume = volume;
+
+            }, 100);
+
+            localStorage.setItem("nagiAmbientStarted", "true");
+
+        }).catch(() => {});
+    }
+
+    const hasStarted =
+        localStorage.getItem("nagiAmbientStarted");
+
+    if (hasStarted === "true") {
+        fadeIn();
+    }
+
+    document.addEventListener("click", fadeIn, { once: true });
 }
