@@ -17,6 +17,13 @@ const ambientFile = ambientTracks[currentPage];
 const ambientAudio = new Audio();
 
 if (ambientFile) {
+    ambientAudio.src = "./" + ambientFile;
+    ambientAudio.loop = true;
+    ambientAudio.volume = 0.15;
+    ambientAudio.preload = "auto";
+}
+
+if (ambientFile) {
     ambientAudio.src = ambientFile;
     ambientAudio.loop = true;
     ambientAudio.volume = 0.15;
