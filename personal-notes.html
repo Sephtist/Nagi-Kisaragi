@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,48 +6,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nagi Kisaragi — Personal Case Notes</title>
+    <title>Nagi Kisaragi — Private Records</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <p class="system">KISARAGI PERSONAL ARCHIVE // CONFIDENTIAL</p>
+<script>
+    if (sessionStorage.getItem("nagiAuthenticated") !== "true") {
+        window.location.href = "login.html";
+    }
+</script>
 
-        <h1>PERSONAL CASE NOTES</h1>
+<header>
+    <p class="system">KISARAGI PERSONAL ARCHIVE // CONFIDENTIAL</p>
 
-        <p class="subtitle">RESTRICTED ACCESS</p>
-    </header>
+    <h1>PRIVATE RECORDS</h1>
 
-    <main>
+    <p class="subtitle">EXTERNAL ARCHIVE</p>
+</header>
 
-        <section class="status">
-            <p>ACCESS LEVEL: <span>AUTHORIZED</span></p>
-            <p>STATUS: CONFIDENTIAL</p>
-        </section>
+<main>
 
-        <section>
-            <h2>PRIVATE RECORDS</h2>
+    <section class="status">
+        <p>ACCESS LEVEL: <span>AUTHORIZED</span></p>
+        <p>STATUS: CONFIDENTIAL</p>
+        <p>DESTINATION: EXTERNAL</p>
+    </section>
 
-            <p>
-                Personal investigative notes maintained by Kisaragi.
-            </p>
+    <section>
+        <h2>PERSONAL REPOSITORY</h2>
 
-            <p class="nagi-note">
-                [NAGI'S NOTE: You weren't supposed to find this.]
-            </p>
-        </section>
+        <p>
+            Additional material maintained outside the primary
+            investigative archive.
+        </p>
+
+        <p>
+            References, personal notes, supplementary information,
+            and other records not intended for inclusion in the
+            public archive are maintained separately.
+        </p>
+
+        <p class="nagi-note">
+            [NAGI'S NOTE: There's more stuff here than I felt like
+            putting on the actual website.]
+        </p>
 
         <br>
 
-        <a href="index.html">← RETURN TO DATABASE</a>
+        <a href="https://adaptable-avenue-70f.notion.site/More-more-more-Kisaragi-3c942b304a9c80fdb73bf7af33dee4bf"
+           target="_blank"
+           rel="noopener noreferrer">
+            → ACCESS PERSONAL REPOSITORY
+        </a>
+    </section>
 
-    </main>
+    <br>
 
-    <script src="ambient.js"></script>
+    <a href="index.html">← RETURN TO DATABASE</a>
+
+</main>
+
+<script src="ambient.js"></script>
 
 </body>
 
 </html>
+```
