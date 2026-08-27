@@ -14,27 +14,17 @@ const currentPage =
 
 const ambientFile = ambientTracks[currentPage];
 
-const ambientAudio = new Audio();
-
 if (ambientFile) {
+
+    const ambientAudio = new Audio();
+
     ambientAudio.src = "./" + ambientFile;
     ambientAudio.loop = true;
     ambientAudio.volume = 0.15;
     ambientAudio.preload = "auto";
+
+    document.addEventListener("click", function () {
+        ambientAudio.play();
+    }, { once: true });
+
 }
-
-if (ambientFile) {
-    ambientAudio.src = ambientFile;
-    ambientAudio.loop = true;
-    ambientAudio.volume = 0.15;
-}
-
-function startAmbient() {
-    if (!ambientFile) return;
-
-    ambientAudio.play().catch(() => {
-        console.log("Ambient audio waiting for user interaction.");
-    });
-}
-
-document.addEventListener("click", startAmbient, { once: true });
