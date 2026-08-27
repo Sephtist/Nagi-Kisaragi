@@ -10,8 +10,8 @@ loginForm.addEventListener("submit", function (event) {
     if (username === "KISARAGI" && password === "0214") {
 
         sessionStorage.setItem("nagiAuthenticated", "true");
-
-        window.location.href = "private.html";
+        
+window.location.href = "personal-notes.html";
 
     } else {
 
