@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nagi Kisaragi — Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <p class="system">KISARAGI PERSONAL ARCHIVE // RESTRICTED</p>
+
+        <h1>LOGIN</h1>
+
+        <p class="subtitle">AUTHENTICATION REQUIRED</p>
+    </header>
+
+    <main>
+
+        <section class="status">
+            <p>ACCESS LEVEL: <span>RESTRICTED</span></p>
+            <p>STATUS: LOCKED</p>
+        </section>
+
+        <section>
+            <h2>AUTHENTICATION</h2>
+
+            <form id="login-form">
+
+                <label for="username">
+                    USERNAME
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    autocomplete="off"
+                    required
+                >
+
+                <label for="password">
+                    PASSWORD
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit">
+                    AUTHENTICATE
+                </button>
+
+            </form>
+
+            <p id="login-message"></p>
+        </section>
+
+        <br>
+
+        <a href="index.html">← RETURN TO DATABASE</a>
+
+    </main>
+
+    <script src="ambient.js"></script>
+
+</body>
+
+</html>
