@@ -216,7 +216,19 @@
 
     </main>
 
-    <script src="ambient.js"></script>
+<audio id="case041-audio" loop>
+    <source src="ambient-041.mp3.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    const caseAudio = document.getElementById("case041-audio");
+
+    caseAudio.volume = 0.12;
+
+    document.addEventListener("click", () => {
+        caseAudio.play().catch(() => {});
+    }, { once: true });
+</script>
     
 </body>
 
