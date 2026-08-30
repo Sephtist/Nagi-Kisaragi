@@ -1,4 +1,3 @@
-```javascript
 const loginForm = document.getElementById("login-form");
 const loginMessage = document.getElementById("login-message");
 
@@ -19,4 +18,3 @@ loginForm.addEventListener("submit", function (event) {
 
     }
 });
-```
