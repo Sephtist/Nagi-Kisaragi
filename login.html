@@ -1,73 +1,23 @@
-```html
-<!DOCTYPE html>
-<html lang="en">
+<form id="login-form">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <label for="pin">
+        PERSONAL ACCESS PIN
+    </label>
 
-    <title>Nagi Kisaragi — Login</title>
+    <input
+        type="password"
+        id="pin"
+        name="pin"
+        inputmode="numeric"
+        autocomplete="off"
+        maxlength="10"
+        required
+    >
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <button type="submit">
+        AUTHENTICATE
+    </button>
 
-<body>
+</form>
 
-<header>
-    <p class="system">KISARAGI PERSONAL ARCHIVE // RESTRICTED</p>
-
-    <h1>LOGIN</h1>
-
-    <p class="subtitle">AUTHENTICATION REQUIRED</p>
-</header>
-
-<main>
-
-    <section class="status">
-        <p>ACCESS LEVEL: <span>RESTRICTED</span></p>
-        <p>STATUS: LOCKED</p>
-    </section>
-
-    <section>
-
-        <h2>AUTHENTICATION</h2>
-
-        <form id="login-form">
-
-            <label for="pin">
-                PERSONAL ACCESS PIN
-            </label>
-
-            <input
-                type="password"
-                id="pin"
-                name="pin"
-                inputmode="numeric"
-                autocomplete="off"
-                maxlength="10"
-                required
-            >
-
-            <button type="submit">
-                AUTHENTICATE
-            </button>
-
-        </form>
-
-        <p id="login-message"></p>
-
-    </section>
-
-    <br>
-
-    <a href="index.html">← RETURN TO DATABASE</a>
-
-</main>
-
-<script src="ambient.js"></script>
-<script src="login.js"></script>
-
-</body>
-
-</html>
-```
+<p id="login-message"></p>
